@@ -74,7 +74,7 @@ export default function LandingPage() {
               className="font-fredoka text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1]"
             >
               Bridging the Classroom and Home for{' '}
-              <span className="bg-gradient-to-r from-amber-500 via-sky-500 to-teal-500 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-amber-500 via-sky-500 to-teal-500 bg-clip-text text-transparent">
                 Young Learners
               </span>
             </motion.h1>
@@ -242,7 +242,7 @@ export default function LandingPage() {
 
         {/* 4. INTERACTIVE DEMO PREVIEW SANDBOX */}
         <section id="sandbox-demo" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 text-white rounded-3xl p-6 sm:p-10 shadow-2xl space-y-8">
+          <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-950 text-white rounded-3xl p-6 sm:p-10 shadow-2xl space-y-8">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-700/80 pb-6">
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-bold border border-amber-400/30 mb-2">

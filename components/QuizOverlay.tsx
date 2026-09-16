@@ -78,7 +78,7 @@ export default function QuizOverlay({
           className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border-4 border-amber-300 overflow-hidden flex flex-col"
         >
           {/* Top Bar */}
-          <div className="bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 p-4 flex items-center justify-between">
+          <div className="bg-linear-to-r from-amber-400 via-yellow-400 to-amber-500 p-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Trophy className="w-6 h-6 text-slate-950 fill-slate-900" />
               <span className="font-fredoka text-lg font-bold text-slate-950">

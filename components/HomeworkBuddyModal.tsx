@@ -89,7 +89,7 @@ export default function HomeworkBuddyModal({
           className="relative w-full max-w-xl bg-white rounded-3xl shadow-2xl border-4 border-sky-300 overflow-hidden flex flex-col max-h-[85vh]"
         >
           {/* Header */}
-          <div className="bg-gradient-to-r from-sky-400 to-teal-400 p-4 sm:p-5 flex items-center justify-between text-white">
+          <div className="bg-linear-to-r from-sky-400 to-teal-400 p-4 sm:p-5 flex items-center justify-between text-white">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/40">
                 <Lightbulb className="w-6 h-6 text-amber-300 fill-amber-300" />

@@ -95,7 +95,7 @@ export default function KidsPortalPage() {
             </div>
 
             {/* Star Points Progress Badge */}
-            <div className="flex items-center gap-1.5 bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950 px-4 py-2 rounded-full font-fredoka font-bold text-sm shadow-sm border border-amber-300">
+            <div className="flex items-center gap-1.5 bg-linear-to-r from-amber-400 to-yellow-400 text-slate-950 px-4 py-2 rounded-full font-fredoka font-bold text-sm shadow-sm border border-amber-300">
               <Star className="w-4 h-4 fill-slate-950 text-slate-950" />
               <span>⭐️ {starPoints} Stars</span>
             </div>
@@ -103,7 +103,7 @@ export default function KidsPortalPage() {
         </div>
 
         {/* Mascot Hub Section */}
-        <div className="bg-gradient-to-b from-sky-100/60 to-amber-50/60 p-6 sm:p-10 rounded-3xl border-4 border-white shadow-xl relative overflow-hidden">
+        <div className="bg-linear-to-b from-sky-100/60 to-amber-50/60 p-6 sm:p-10 rounded-3xl border-4 border-white shadow-xl relative overflow-hidden">
           <MascotHub
             mood={mascotMood}
             speechText={speechText}
@@ -121,7 +121,7 @@ export default function KidsPortalPage() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="p-6 bg-gradient-to-r from-sky-50 to-teal-50 border-3 border-sky-200 rounded-3xl shadow-sm text-slate-800"
+            className="p-6 bg-linear-to-r from-sky-50 to-teal-50 border-3 border-sky-200 rounded-3xl shadow-sm text-slate-800"
           >
             <div className="flex items-center gap-2 mb-2 text-sky-700 font-fredoka font-bold text-lg">
               <Sparkles className="w-5 h-5 text-amber-500 fill-amber-400" />
@@ -256,7 +256,7 @@ export default function KidsPortalPage() {
           </div>
 
           {/* Test Schedule Box */}
-          <div className="bg-gradient-to-br from-amber-400 to-yellow-400 p-6 rounded-3xl text-slate-950 shadow-lg flex flex-col justify-between space-y-4">
+          <div className="bg-linear-to-br from-amber-400 to-yellow-400 p-6 rounded-3xl text-slate-950 shadow-lg flex flex-col justify-between space-y-4">
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-slate-950 font-fredoka font-bold text-lg">
                 <Calendar className="w-5 h-5" />

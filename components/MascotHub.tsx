@@ -104,8 +104,8 @@ export default function MascotHub({
         ></motion.div>
 
         {/* Mascot Body Container */}
-        <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-gradient-to-b from-sky-300 via-amber-300 to-teal-300 p-2.5 shadow-2xl shadow-sky-300/30">
-          <div className="w-full h-full bg-gradient-to-b from-sky-400 to-sky-500 rounded-full flex flex-col items-center justify-center relative overflow-hidden border-4 border-white shadow-inner">
+        <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-linear-to-b from-sky-300 via-amber-300 to-teal-300 p-2.5 shadow-2xl shadow-sky-300/30">
+          <div className="w-full h-full bg-linear-to-b from-sky-400 to-sky-500 rounded-full flex flex-col items-center justify-center relative overflow-hidden border-4 border-white shadow-inner">
             
             {/* Robot Antenna */}
             <div className="absolute top-1 flex flex-col items-center">

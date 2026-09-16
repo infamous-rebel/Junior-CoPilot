@@ -15,13 +15,13 @@ export default function Navbar() {
           
           {/* Logo & Branding */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-400 via-yellow-400 to-sky-400 p-0.5 shadow-md group-hover:scale-105 transition-transform">
+            <div className="w-10 h-10 rounded-2xl bg-linear-to-tr from-amber-400 via-yellow-400 to-sky-400 p-0.5 shadow-md group-hover:scale-105 transition-transform">
               <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-amber-500 fill-amber-400" />
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="font-fredoka text-xl font-bold bg-gradient-to-r from-amber-600 via-sky-600 to-teal-600 bg-clip-text text-transparent">
+              <span className="font-fredoka text-xl font-bold bg-linear-to-r from-amber-600 via-sky-600 to-teal-600 bg-clip-text text-transparent">
                 Junior Copilot
               </span>
               <span className="text-[10px] font-medium tracking-wide text-slate-500 uppercase -mt-1">
