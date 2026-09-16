@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-kids: #FAFAEF;
+    --bg-teacher: #F8FAFC;
+    --primary-yellow: #FFC72C;
+    --primary-blue: #00A8E8;
+    --primary-mint: #2EC4B6;
+    --primary-coral: #FF6B6B;
+    --primary-purple: #8B5CF6;
+    --teacher-indigo: #1E1E38;
+    --teacher-slate: #4A4E69;
+    --teacher-teal: #2A9D8F;
+  }
+
+  body {
+    background-color: var(--bg-kids);
+    color: #1E293B;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-fredoka {
+  font-family: var(--font-fredoka), cursive, sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Glassmorphism & Custom Shadow Effects */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.glass-card-kids {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  border: 3px solid #FFF8E7;
+  box-shadow: 0 12px 32px -8px rgba(0, 168, 232, 0.12), 0 6px 16px rgba(255, 199, 44, 0.15);
+}
+
+.glass-card-teacher {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 10px 25px -5px rgba(30, 30, 56, 0.06);
+}
+
+/* Playful Button Hover Inflation */
+.btn-kids-yellow {
+  background-color: #FFC72C;
+  color: #1E1E38;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 6px 0px #D99B00, 0 10px 20px rgba(255, 199, 44, 0.35);
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btn-kids-yellow:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 9px 0px #D99B00, 0 14px 24px rgba(255, 199, 44, 0.45);
+}
+.btn-kids-yellow:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 3px 0px #D99B00;
+}
+
+.btn-kids-blue {
+  background-color: #00A8E8;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 6px 0px #0077A8, 0 10px 20px rgba(0, 168, 232, 0.35);
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btn-kids-blue:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 9px 0px #0077A8, 0 14px 24px rgba(0, 168, 232, 0.45);
+}
+.btn-kids-blue:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 3px 0px #0077A8;
+}
+
+.btn-kids-mint {
+  background-color: #2EC4B6;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 6px 0px #1E8C82, 0 10px 20px rgba(46, 196, 182, 0.35);
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btn-kids-mint:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 9px 0px #1E8C82, 0 14px 24px rgba(46, 196, 182, 0.45);
+}
+.btn-kids-mint:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 3px 0px #1E8C82;
+}
+
+.btn-kids-coral {
+  background-color: #FF6B6B;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 6px 0px #D63838, 0 10px 20px rgba(255, 107, 107, 0.35);
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btn-kids-coral:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 9px 0px #D63838, 0 14px 24px rgba(255, 107, 107, 0.45);
+}
+.btn-kids-coral:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 3px 0px #D63838;
+}
+
+/* Mascot Pulse & Floating Keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s ease-in-out infinite;
+}
